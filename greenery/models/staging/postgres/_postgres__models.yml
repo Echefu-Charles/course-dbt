@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: Details about customer addresses 
+    
+  - name: stg_events
+    description: Details about events
+
+  - name: stg_order_items
+    description: Reference model for order items
+
+  - name: stg_orders
+    description: Details about customer orders
+
+  - name: stg_products
+    description: Reference table for products
+
+  - name: stg_promos
+    description: Reference table for discounts
+
+  - name: stg_users
+    description: Demographic Information about customers
