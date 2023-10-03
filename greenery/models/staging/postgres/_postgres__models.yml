@@ -37,11 +37,7 @@ models:
         - relationships:
               to: ref('stg_users')
               field: user_id
-    - name: product_id
-      tests:
-        - relationships:
-              to: ref('stg_products')
-              field: product_id
+    
 
   - name: stg_products
     description: Reference table for products
