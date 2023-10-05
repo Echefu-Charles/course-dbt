@@ -71,3 +71,13 @@
     String of pearls	39	64	0.609375
     ZZ Plant	34	63	0.539682
 
+## Question 3:Which products had their inventory change from week 2 to week 3?
+#### Answer:
+    select product_id, name, price, inventory, dbt_valid_to
+    from product_snapshot 
+    where product_id in (
+        select product_id from product_snapshot
+        where dbt_valid_to is not null)
+    order by product_id
+from the output ot the query, the products that changed between week 2 and 3 are 
+Pothos, Philodendron, Monstera, String of pearls, ZZ Plant and Bamboo
